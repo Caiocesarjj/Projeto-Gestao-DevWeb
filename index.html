@@ -11,9 +11,17 @@
     body {
       font-family: 'Poppins', sans-serif;
     }
+    .swiper {
+    height: 350px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   </style>
   <!-- Adicione no <head> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
@@ -37,25 +45,22 @@
       <h2 class="text-5xl font-extrabold text-blue-800 mb-4">Desenvolvimento Web</h2>
       <p class="text-xl text-gray-700 mb-6">A área que conecta ideias ao mundo através da tecnologia. Essencial para
         inovação, inclusão digital e negócios modernos.</p>
-      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721262.png" alt="Web Dev"
+      <img src="/assets/imagens/webdev1.png" alt="Web Dev"
         class="w-40 mx-auto animate-bounce">
     </div>
   </section>
 
   <!-- Carrossel no corpo do site -->
-  <section class="swiper mySwiper w-full h-[300px] md:h-[600px]">
+  <section class="swiper mySwiper w-full max-w-5xl mx-auto mt-8 rounded-2xl overflow-hidden shadow-lg">
     <div class="swiper-wrapper">
-      <!-- Slide 1 -->
       <div class="swiper-slide">
-        <img src="/assests/imagens/banner/banner1.jpg" alt="Banner Desenvolvimento Web" class="w-full h-full object-cover">
+        <img src="assets/imagens/banner/banner1.jpg" alt="Banner 1" />
       </div>
-      <!-- Slide 2 -->
       <div class="swiper-slide">
-        <img src="/assets/imagens//banner/banner2.jpg" alt="Banner Tecnologias Web" class="w-full h-full object-cover">
+        <img src="assets/imagens/banner/banner2.jpg" alt="Banner 2" />
       </div>
-      <!-- Slide 3 -->
       <div class="swiper-slide">
-        <img src="/assest/imagens/banner/banner3.jpg" alt="Banner ODS 9" class="w-full h-full object-cover">
+        <img src="assets/imagens/banner/banner3.jpg" alt="Banner 3" />
       </div>
     </div>
   </section>
@@ -72,7 +77,7 @@
             na experiência dos usuários e no sucesso das plataformas digitais.</p>
         </div>
         <div class="md:w-1/2">
-          <img src="assest/imagens/imagem_post_desenvolvimento_web.jpg" alt="Imagem de desenvolvimento web"
+          <img src="assets/imagens/imagem_post_desenvolvimento_web.jpg" alt="Imagem de desenvolvimento web"
             class="rounded-xl shadow-lg">
         </div>
       </div>
@@ -148,16 +153,16 @@
   </footer>
   <!-- Adicione no final do <body> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        effect: "fade",
-      });
-    </script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+  });
+</script>
 </body>
 
 </html>
