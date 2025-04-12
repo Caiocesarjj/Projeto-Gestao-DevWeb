@@ -43,28 +43,23 @@
   </section>
 
   <!-- Carrossel no corpo do site -->
-  <section class="swiper mySwiper w-full h-[300px] md:h-[400px]">
+  <section class="swiper mySwiper w-full h-[300px] md:h-[600px]">
     <div class="swiper-wrapper">
-      <div class="swiper-slide flex items-center justify-center bg-blue-800 text-white text-center px-6">
-        <div>
-          <h2 class="text-3xl font-bold mb-2">Desenvolvimento Web</h2>
-          <p class="text-lg">Conectando ideias ao mundo digital.</p>
-        </div>
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="/assest/imagens/banner/banner1.jpg" alt="Banner Desenvolvimento Web" class="w-full h-full object-cover">
       </div>
-      <div class="swiper-slide flex items-center justify-center bg-blue-600 text-white text-center px-6">
-        <div>
-          <h2 class="text-3xl font-bold mb-2">Tecnologias & Certificações</h2>
-          <p class="text-lg">React, Node.js, FreeCodeCamp, AWS e muito mais!</p>
-        </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="/assets/imagens//banner/banner2.jpg" alt="Banner Tecnologias Web" class="w-full h-full object-cover">
       </div>
-      <div class="swiper-slide flex items-center justify-center bg-blue-400 text-white text-center px-6">
-        <div>
-          <h2 class="text-3xl font-bold mb-2">ODS 9 & Inovação</h2>
-          <p class="text-lg">Desenvolvimento Web como motor da infraestrutura digital.</p>
-        </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="/assest/imagens/banner/banner3.jpg" alt="Banner ODS 9" class="w-full h-full object-cover">
       </div>
     </div>
   </section>
+  
 
   <!-- Sobre a Profissão -->
   <section id="profissao" class="py-16 px-6">
@@ -152,14 +147,17 @@
     Projeto acadêmico - Desenvolvimento Web & ODS 9 © 2025
   </footer>
   <!-- Adicione no final do <body> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: { delay: 4000 },
-      effect: "fade",
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        effect: "fade",
+      });
+    </script>
 </body>
 
 </html>
