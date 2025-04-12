@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,10 @@
       font-family: 'Poppins', sans-serif;
     }
   </style>
+  <!-- Adicione no <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
   <!-- Navegação -->
   <header class="bg-blue-800 text-white p-4 shadow-md sticky top-0 z-50">
@@ -31,8 +35,34 @@
   <section id="inicio" class="text-center py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-50">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-5xl font-extrabold text-blue-800 mb-4">Desenvolvimento Web</h2>
-      <p class="text-xl text-gray-700 mb-6">A área que conecta ideias ao mundo através da tecnologia. Essencial para inovação, inclusão digital e negócios modernos.</p>
-      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721262.png" alt="Web Dev" class="w-40 mx-auto animate-bounce">
+      <p class="text-xl text-gray-700 mb-6">A área que conecta ideias ao mundo através da tecnologia. Essencial para
+        inovação, inclusão digital e negócios modernos.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721262.png" alt="Web Dev"
+        class="w-40 mx-auto animate-bounce">
+    </div>
+  </section>
+
+  <!-- Carrossel no corpo do site -->
+  <section class="swiper mySwiper w-full h-[300px] md:h-[400px]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex items-center justify-center bg-blue-800 text-white text-center px-6">
+        <div>
+          <h2 class="text-3xl font-bold mb-2">Desenvolvimento Web</h2>
+          <p class="text-lg">Conectando ideias ao mundo digital.</p>
+        </div>
+      </div>
+      <div class="swiper-slide flex items-center justify-center bg-blue-600 text-white text-center px-6">
+        <div>
+          <h2 class="text-3xl font-bold mb-2">Tecnologias & Certificações</h2>
+          <p class="text-lg">React, Node.js, FreeCodeCamp, AWS e muito mais!</p>
+        </div>
+      </div>
+      <div class="swiper-slide flex items-center justify-center bg-blue-400 text-white text-center px-6">
+        <div>
+          <h2 class="text-3xl font-bold mb-2">ODS 9 & Inovação</h2>
+          <p class="text-lg">Desenvolvimento Web como motor da infraestrutura digital.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -42,10 +72,13 @@
       <h2 class="text-4xl font-bold text-blue-700 mb-6 text-center">Sobre a Profissão</h2>
       <div class="md:flex md:space-x-8">
         <div class="md:w-1/2 mb-6 md:mb-0">
-          <p class="text-lg leading-relaxed text-gray-700">O Desenvolvedor Web projeta e desenvolve interfaces e sistemas. Atua em várias frentes: front-end, back-end ou como full stack. Suas criações impactam diretamente na experiência dos usuários e no sucesso das plataformas digitais.</p>
+          <p class="text-lg leading-relaxed text-gray-700">O Desenvolvedor Web projeta e desenvolve interfaces e
+            sistemas. Atua em várias frentes: front-end, back-end ou como full stack. Suas criações impactam diretamente
+            na experiência dos usuários e no sucesso das plataformas digitais.</p>
         </div>
         <div class="md:w-1/2">
-          <img src="https://via.placeholder.com/600x300" alt="Imagem de desenvolvimento web" class="rounded-xl shadow-lg">
+          <img src="https://via.placeholder.com/600x300" alt="Imagem de desenvolvimento web"
+            class="rounded-xl shadow-lg">
         </div>
       </div>
     </div>
@@ -94,7 +127,9 @@
   <section id="ods" class="py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-4xl font-bold text-blue-900 mb-6 text-center">Contribuição para os ODS</h2>
-      <p class="mb-6 text-gray-700 text-lg leading-relaxed text-center">O Desenvolvimento Web acelera a transformação digital e possibilita o crescimento sustentável. Contribui para o ODS 9 com soluções acessíveis e inovadoras.</p>
+      <p class="mb-6 text-gray-700 text-lg leading-relaxed text-center">O Desenvolvimento Web acelera a transformação
+        digital e possibilita o crescimento sustentável. Contribui para o ODS 9 com soluções acessíveis e inovadoras.
+      </p>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white p-4 rounded-xl shadow">
           <h3 class="font-semibold text-blue-600">Pequenos Negócios</h3>
@@ -116,5 +151,15 @@
   <footer class="text-center p-6 text-sm text-gray-600 bg-white shadow-inner">
     Projeto acadêmico - Desenvolvimento Web & ODS 9 © 2025
   </footer>
+  <!-- Adicione no final do <body> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 4000 },
+      effect: "fade",
+    });
+  </script>
 </body>
+
 </html>
