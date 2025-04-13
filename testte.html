@@ -1,57 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Título da Página</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desenvolvimento Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .swiper {
+    height: 350px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  </style>
+  <!-- Adicione no <head> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body>
-  <header>
-    <h1>Explorando o Desenvolvimento Web</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="dicas.html">Dicas</a>
-      <a href="ods.html">ODS</a>
-      <a href="contatos.html">Contatos</a>
-    </nav>
-  </header>
 
-  <section>
-    <div class="imagem-centro">
-      <img src="assets/imagens/certificacoes.png" alt="imagem certificacoes" class="animate-bounce">
-    </div>
-    <div class="card">
-      <p><h1><strong>📜 Certificações e Qualificações Valorizadas</strong></h1>
-        <br>
-        No mercado de <strong>Desenvolvimento Web</strong>, ter conhecimento prático é essencial — mas certificações ajudam a validar suas habilidades e se destacar entre outros candidatos.<br>
-        <br>
-        <h2><strong>Certificações populares:</strong></h2>
-        <br>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-          <li>✅ <a href="https://www.freecodecamp.org/"><strong>FreeCodeCamp</strong> – Oferece certificados gratuitos em diversas áreas do desenvolvimento web, como Front-end, Back-end e Full Stack, através de aprendizado prático e projetos.</a></li>
-          <li>✅ <a href="https://www.w3schools.com/"><strong>Certificação W3Schools</strong> – Fornece certificações pagas que validam o conhecimento em tecnologias fundamentais da web como HTML, CSS e JavaScript, com foco em conceitos e prática.</a></li>
-          <li>✅ <a href="https://developers.google.com/certification?hl=pt-br"><strong>Google Developers Certification</strong> – Apresenta certificações focadas em tecnologias Google, incluindo Associate Android Developer e Web Specialist, validando habilidades específicas em suas plataformas.</a></li>
-          <li>✅ <a href="https://www.coursera.org/professional-certificates/azure-developer-associate"><strong>Microsoft Certified: Azure Developer Associate</strong> – Certificação que comprova a capacidade de projetar, construir, testar e manter soluções em nuvem Azure, relevante para desenvolvedores full-stack e back-end.</a></li>
-          <li>✅ <a href="https://aws.amazon.com/pt/certification/certified-developer-associate/"><strong>AWS Certified Developer – Associate</strong> – Valida o conhecimento e as habilidades em desenvolver, implantar e depurar aplicativos baseados na nuvem AWS, importante para desenvolvedores com foco em soluções escaláveis.</a></li>
-          <li>✅ <a href="https://www.oracle.com/education/oracle-certified-associate-java-se-8-programmer/trackp_1z0-808.html"><strong>Oracle Certified Associate (OCA) – Java SE Programmer</strong> – Certificação básica para programadores Java, fundamental para muitos projetos web back-end e aplicações corporativas.</a></li>
-          <li>✅ <a href="https://www.scrum.org/professional-scrum-certifications/psm-i-certification"><strong>Professional Scrum Master™ I (PSM I)</strong> – Embora não seja uma certificação de desenvolvimento direto, valida o conhecimento do framework Scrum, essencial para trabalhar em equipes ágeis de desenvolvimento web.</a></li>
-          <li>✅ <a href="https://www.comptia.org/certifications/it-fundamentals"><strong>CompTIA IT Fundamentals+ (ITF+)</strong> – Certificação de nível básico que cobre conceitos fundamentais de TI, útil para quem está começando na área de desenvolvimento web.</a></li>
-          <li>✅ <a href="https://www.linuxfoundation.org/certification/lfcs/"><strong>Linux Foundation Certified SysAdmin (LFCS)</strong> – Certificação que valida habilidades de administração de sistemas Linux, importante para desenvolvedores que trabalham com servidores e ambientes de implantação web.</a></li>
-          <li>✅ <a href="https://www.isc2.org/Certifications/CSSLP"><strong>Certified Secure Software Lifecycle Professional (CSSLP)</strong> – Certificação para profissionais que integram segurança em todas as fases do ciclo de vida do desenvolvimento de software, crucial para construir aplicações web seguras.</a></li>
-         <br>
-        Qualificações desejadas:
-        Graduação ou curso técnico em áreas de TI.
+<body class="bg-gradient-to-br from-blue-50 to-white text-white">
+  <!-- Navegação -->
+  <header class="bg-blue-800 text-white p-4 shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-tight text-white drop-shadow-md transition duration-300 hover:scale-105">Desenvolvimento Web</h1>
+      <ul class="flex space-x-4 text-sm md:text-base">
+        <li><a href="#inicio" class="hover:text-yellow-300 transition">Início</a></li>
+        <li><a href="#profissao" class="hover:text-yellow-300 transition">Profissão</a></li>
+        <li><a href="#Certificacoes" class="hover:text-yellow-300 transition">Certificações</a></li>
+        <li><a href="#contatos" class="hover:text-yellow-300 transition">Contatos</a></li>
+        <li><a href="#ods" class="hover:text-yellow-300 transition">ODS</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        Portfólio online com projetos práticos.
+  <!-- Página Inicial -->
+  <section id="inicio" class="text-center py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-5xl font-extrabold text-blue-800 mb-4">Desenvolvimento Web</h2>
+      <p class="text-xl text-gray-700 mb-6">A área que conecta ideias ao mundo através da tecnologia. Essencial para
+        inovação, inclusão digital e negócios modernos.</p>
+    </div>
+  </section>
 
-        Participação em comunidades de desenvolvedores (GitHub, Dev.to, Stack Overflow).</p>
-    </div>
-  </section>
+  <!-- Carrossel no corpo do site -->
+  <section class="swiper mySwiper w-full max-w-5xl mx-auto mt-8 rounded-2xl overflow-hidden">
+    <div class="swiper-wrapper bg-black">
+      <div class="swiper-slide bg-[#8631eb] flex justify-center items-center">
+        <img src="assets/imagens/banner/banner1.jpg" alt="Imagem 1" class="w-[600px] h-[400px] object-contain">
+      </div>
+      <div class="swiper-slide bg-[#8631eb] flex justify-center items-center">
+        <img src="assets/imagens/banner/banner2.jpg" alt="Imagem 2" class="w-[600px] h-[400px] object-contain">
+      </div>
+      <div class="swiper-slide bg-[#8631eb] flex justify-center items-center">
+        <img src="assets/imagens/banner/banner3.jpg" alt="Imagem 3" class="w-[600px] h-[400px] object-contain">
+      </div>
+    </div>
+  </section>
+  
 
-  <footer>
-    <p>Projeto acadêmico | UNIG - Desenvolvimento Web © 2025</p>
-  </footer>
+  <!-- Sobre a Profissão -->
+  <section id="profissao" class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-700 mb-6 text-center"><a href="profissao.html">Sobre a Profissão</a></h2>
+      <div class="md:flex md:space-x-8">
+        <div class="md:w-1/2 mb-6 md:mb-0">
+          <p class="text-lg leading-relaxed text-gray-700">O Desenvolvedor Web projeta e desenvolve interfaces e
+            sistemas. Atua em várias frentes: front-end, back-end ou como full stack. Suas criações impactam diretamente
+            na experiência dos usuários e no sucesso das plataformas digitais.
+            <br><a href="profissao.html"> <i>Saiba Mais</i></a><br></p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="assets/imagens/imagem_post_desenvolvimento_web.jpg" alt="Imagem de desenvolvimento web"
+            class="rounded-xl shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificações e Tendências -->
+  <section id="Certificacoes" class="py-16 px-6 bg-blue-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-700 mb-10 text-center"><a href="certificacoes.html" >Certificações e Tendências</a></h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Certificações</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>FreeCodeCamp</li>
+            <li>Google Developers</li>
+            <li>Microsoft Learn</li>
+            <li>AWS Cloud Practitioner</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Tecnologias Emergentes</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>React, Vue.js</li>
+            <li>Node.js, Next.js</li>
+            <li>APIs REST e GraphQL</li>
+            <li>Cloud Computing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes e Contatos -->
+  <section id="contatos" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-blue-700 mb-8">Redes e Contatos</h2>
+      <div class="flex justify-center space-x-10 text-3xl">
+        <a href="#" aria-label="LinkedIn" class="text-blue-600 hover:scale-110 transition">🔗</a>
+        <a href="#" aria-label="GitHub" class="text-gray-900 hover:scale-110 transition">💻</a>
+        <a href="#" aria-label="Email" class="text-red-600 hover:scale-110 transition">📧</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contribuição para os ODS -->
+  <section id="ods" class="py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6 text-center">Contribuição para os ODS</h2>
+      <p class="mb-6 text-gray-700 text-lg leading-relaxed text-center">O Desenvolvimento Web acelera a transformação
+        digital e possibilita o crescimento sustentável. Contribui para o ODS 9 com soluções acessíveis e inovadoras.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-blue-600">Pequenos Negócios</h3>
+          <p class="text-gray-700 text-sm">Sites e e-commerces acessíveis para impulsionar empreendedores locais.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-blue-600">Digitalização de Serviços</h3>
+          <p class="text-gray-700 text-sm">Automatização de processos em empresas e instituições públicas.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow">
+          <h3 class="font-semibold text-blue-600">Acesso à Educação</h3>
+          <p class="text-gray-700 text-sm">Plataformas educacionais acessíveis e responsivas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-6 text-sm text-gray-600 bg-white shadow-inner">
+    Projeto acadêmico | UNIG - Desenvolvimento Web © 2025
+  </footer>
+  <!-- Adicione no final do <body> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.card, h2, .imagem-centro', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-in-out',
+    reset: true
+  });
+</script>
 </body>
 </html>

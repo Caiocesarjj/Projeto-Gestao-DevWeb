@@ -78,3 +78,40 @@ a:hover {
   text-decoration: underline; /* Exemplo: Adiciona sublinhado ao passar o mouse */
   color: blue; /* Exemplo: Muda a cor para azul ao passar o mouse */
 }
+* {
+  scroll-behavior: smooth;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: #f0f0f0;
+  }
+
+  header, footer {
+    background-color: #111827;
+    color: #ffffff;
+  }
+
+  nav a {
+    color: #ffffff;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  h1, h2 {
+    color: #ffffff;
+  }
+
+  .card {
+    background: #222;
+    color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+
+  a {
+    color: #90cdf4;
+  }
+}
+
