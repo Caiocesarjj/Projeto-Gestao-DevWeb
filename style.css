@@ -39,9 +39,10 @@ section {
   margin: auto;
 }
 
-h1, h2 {
-  color: #1e3a8a;
-  margin-bottom: 1rem;
+header h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .card {
@@ -55,4 +56,25 @@ h1, h2 {
 
 .card:hover {
   transform: translateY(-5px);
+}
+.imagem-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.imagem-centro img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Herda a cor do texto pai */
+}
+
+a:hover {
+  /* Opcional: Adiciona algum efeito quando o mouse passa por cima */
+  text-decoration: underline; /* Exemplo: Adiciona sublinhado ao passar o mouse */
+  color: blue; /* Exemplo: Muda a cor para azul ao passar o mouse */
 }
