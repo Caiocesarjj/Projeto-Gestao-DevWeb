@@ -12,17 +12,18 @@
     body {
       font-family: 'Poppins', sans-serif;
     }
+
     .swiper {
-    height: 350px;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+      height: 350px;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
-  <!-- Adicione no <head> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-gradient-to-br from-blue-50 to-white text-white">
@@ -32,10 +33,11 @@
       <h1 class="text-2xl font-bold tracking-tight text-white drop-shadow-md transition duration-300 hover:scale-105">Desenvolvimento Web</h1>
       <ul class="flex space-x-4 text-sm md:text-base">
         <li><a href="#inicio" class="hover:text-yellow-300 transition">Início</a></li>
-        <li><a href="#profissao" class="hover:text-yellow-300 transition">Profissão</a></li>
-        <li><a href="#Certificacoes" class="hover:text-yellow-300 transition">Certificações</a></li>
-        <li><a href="#contatos" class="hover:text-yellow-300 transition">Contatos</a></li>
-        <li><a href="#ods" class="hover:text-yellow-300 transition">ODS</a></li>
+        <li><a href="profissao.html" class="hover:text-yellow-300 transition">Profissão</a></li>
+        <li><a href="certificacoes.html" class="hover:text-yellow-300 transition">Certificações</a></li>
+        <li><a href="dicas.html" class="hover:text-yellow-300 transition">Dicas</a></li>
+        <li><a href="contatos.html" class="hover:text-yellow-300 transition">Contatos</a></li>
+        <li><a href="ods.html" class="hover:text-yellow-300 transition">ODS</a></li>
       </ul>
     </nav>
   </header>
@@ -48,7 +50,6 @@
         inovação, inclusão digital e negócios modernos.</p>
     </div>
   </section>
-
   <!-- Carrossel no corpo do site -->
   <section class="swiper mySwiper w-full max-w-5xl mx-auto mt-8 rounded-2xl overflow-hidden">
     <div class="swiper-wrapper bg-black">
@@ -63,7 +64,52 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Seção Apresentação Resumida sobre Desenvolvimento Web -->
+  <section class="py-16 px-6 bg-white text-gray-800">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center">Desenvolvimento Web</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">O que é?</h3>
+          <p class="text-lg leading-relaxed">
+            O Desenvolvimento Web é a criação de sites e sistemas para a internet. Ele transforma ideias em experiências digitais acessíveis, inovadoras e funcionais para o mundo todo.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Áreas de Atuação</h3>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li><strong>Front-end:</strong> Interface e interatividade (HTML, CSS, JS).</li>
+            <li><strong>Back-end:</strong> Lógica e banco de dados (PHP, Node.js, etc).</li>
+            <li><strong>Full Stack:</strong> Atua nas duas áreas.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Tecnologias & Ferramentas</h3>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li>React, Angular, Vue.js</li>
+            <li>Laravel, Django, Express</li>
+            <li>Git, GitHub, Vercel, Bootstrap</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Tendências & Futuro</h3>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li>Aplicações Web Progressivas (PWAs)</li>
+            <li>WebAssembly e IA</li>
+            <li>Sites acessíveis e responsivos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Contribuição aos ODS</h3>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+          A web promove inclusão digital, acesso à educação e impulsiona pequenos negócios. É uma ferramenta poderosa para atingir os Objetivos de Desenvolvimento Sustentável (ODS).
+        </p>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Sobre a Profissão -->
   <section id="profissao" class="py-16 px-6">
@@ -71,14 +117,11 @@
       <h2 class="text-4xl font-bold text-blue-700 mb-6 text-center"><a href="profissao.html">Sobre a Profissão</a></h2>
       <div class="md:flex md:space-x-8">
         <div class="md:w-1/2 mb-6 md:mb-0">
-          <p class="text-lg leading-relaxed text-gray-700">O Desenvolvedor Web projeta e desenvolve interfaces e
-            sistemas. Atua em várias frentes: front-end, back-end ou como full stack. Suas criações impactam diretamente
-            na experiência dos usuários e no sucesso das plataformas digitais.
+          <p class="text-lg leading-relaxed text-gray-700">O Desenvolvedor Web projeta e desenvolve interfaces e sistemas. Atua em várias frentes: front-end, back-end ou como full stack. Suas criações impactam diretamente na experiência dos usuários e no sucesso das plataformas digitais.
             <br><a href="profissao.html"> <i>Saiba Mais</i></a><br></p>
         </div>
         <div class="md:w-1/2">
-          <img src="assets/imagens/imagem_post_desenvolvimento_web.jpg" alt="Imagem de desenvolvimento web"
-            class="rounded-xl shadow-lg">
+          <img src="assets/imagens/imagem_post_desenvolvimento_web.jpg" alt="Imagem de desenvolvimento web" class="rounded-xl shadow-lg">
         </div>
       </div>
     </div>
@@ -87,7 +130,7 @@
   <!-- Certificações e Tendências -->
   <section id="Certificacoes" class="py-16 px-6 bg-blue-50">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-blue-700 mb-10 text-center"><a href="certificacoes.html" >Certificações e Tendências</a></h2>
+      <h2 class="text-4xl font-bold text-blue-700 mb-10 text-center"><a href="certificacoes.html">Certificações e Tendências</a></h2>
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
           <h3 class="text-2xl font-semibold text-blue-600 mb-4">Certificações</h3>
@@ -111,25 +154,11 @@
     </div>
   </section>
 
-  <!-- Redes e Contatos -->
-  <section id="contatos" class="py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-blue-700 mb-8">Redes e Contatos</h2>
-      <div class="flex justify-center space-x-10 text-3xl">
-        <a href="#" aria-label="LinkedIn" class="text-blue-600 hover:scale-110 transition">🔗</a>
-        <a href="#" aria-label="GitHub" class="text-gray-900 hover:scale-110 transition">💻</a>
-        <a href="#" aria-label="Email" class="text-red-600 hover:scale-110 transition">📧</a>
-      </div>
-    </div>
-  </section>
-
   <!-- Contribuição para os ODS -->
   <section id="ods" class="py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-blue-900 mb-6 text-center">Contribuição para os ODS</h2>
-      <p class="mb-6 text-gray-700 text-lg leading-relaxed text-center">O Desenvolvimento Web acelera a transformação
-        digital e possibilita o crescimento sustentável. Contribui para o ODS 9 com soluções acessíveis e inovadoras.
-      </p>
+      <h2 class="text-4xl font-bold text-blue-900 mb-6 text-center"><a href="ods.html">Contribuição para os ODS</a></h2>
+      <p class="mb-6 text-gray-700 text-lg leading-relaxed text-center">O Desenvolvimento Web acelera a transformação digital e possibilita o crescimento sustentável. Contribui para o ODS 9 com soluções acessíveis e inovadoras.</p>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white p-4 rounded-xl shadow">
           <h3 class="font-semibold text-blue-600">Pequenos Negócios</h3>
@@ -151,18 +180,18 @@
   <footer class="text-center p-6 text-sm text-gray-600 bg-white shadow-inner">
     Projeto acadêmico | UNIG - Desenvolvimento Web © 2025
   </footer>
-  <!-- Adicione no final do <body> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    effect: "fade",
-  });
-</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      effect: "fade",
+    });
+  </script>
 </body>
 
 </html>
