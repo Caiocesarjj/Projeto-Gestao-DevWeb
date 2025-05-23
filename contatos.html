@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Título da Página</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .criadores {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .criadores h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .equipe {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .card-criador {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card-criador img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card-criador h3 {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .card-criador p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card-criador a {
+      color: #0077b5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card-criador a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Explorando o Desenvolvimento Web</h1>
@@ -19,9 +84,41 @@
   </header>
 
   <section>
-    <h2>Título da Seção</h2>
+    <h2>Desenvolvedores</h2>
     <div class="card">
-      <p>Conteúdo aqui…</p>
+      <p class="max-w-2xl mx-auto text-gray-700 text-lg mb-8">
+  Este site foi desenvolvido com dedicação por estudantes apaixonados por tecnologia e inovação. Conheça abaixo quem está por trás deste projeto acadêmico.
+</p>
+    </div>
+  </section>
+
+  <!-- Seção Criadores -->
+  <section class="criadores">
+    <h2>Criadores do Site</h2>
+    <div class="equipe">
+      <!-- Criador 1 -->
+      <div class="card-criador">
+        <img src="caminho/para/foto1.jpg" alt="Foto do Criador 1">
+        <h3>Nome do Criador 1</h3>
+        <p>Matrícula: 0000001</p>
+        <p><a href="https://www.linkedin.com/in/usuario1" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <!-- Criador 2 -->
+      <div class="card-criador">
+        <img src="caminho/para/foto2.jpg" alt="Foto do Criador 2">
+        <h3>Nome do Criador 2</h3>
+        <p>Matrícula: 0000002</p>
+        <p><a href="https://www.linkedin.com/in/usuario2" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <!-- Criador 3 -->
+      <div class="card-criador">
+        <img src="caminho/para/foto3.jpg" alt="Foto do Criador 3">
+        <h3>Nome do Criador 3</h3>
+        <p>Matrícula: 0000003</p>
+        <p><a href="https://www.linkedin.com/in/usuario3" target="_blank">LinkedIn</a></p>
+      </div>
     </div>
   </section>
 
@@ -29,4 +126,5 @@
     <p>© 2025 - Projeto Acadêmico TI | Faculdade XYZ</p>
   </footer>
 </body>
+
 </html>
