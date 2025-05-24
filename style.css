@@ -46,17 +46,35 @@ header h1 {
 }
 
 .card {
-  background: #fff;
-  padding: 1.5rem;
+  background-color: #f9f9f9;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
 .imagem-centro {
   display: flex;
   justify-content: center;
@@ -68,82 +86,13 @@ header h1 {
   max-width: 100%;
   height: auto;
 }
+
 a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: inherit; /* Herda a cor do texto pai */
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-  /* Opcional: Adiciona algum efeito quando o mouse passa por cima */
-  text-decoration: underline; /* Exemplo: Adiciona sublinhado ao passar o mouse */
-  color: blue; /* Exemplo: Muda a cor para azul ao passar o mouse */
-}
-* {
-  scroll-behavior: smooth;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(to right, #1a1a1a, #333);
-    color: #f0f0f0;
-  }
-
-  header, footer {
-    background-color: #111827;
-    color: #ffffff;
-  }
-
-  nav a {
-    color: #ffffff;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  h1, h2 {
-    color: #ffffff;
-  }
-
-  .card {
-    background: #222;
-    color: #f0f0f0;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-  }
-
-  a {
-    color: #90cdf4;
-  }
-}
-/* style.css */
-
-.card {
-    background-color: #f9f9f9; /* Uma cor de fundo suave para o card */
-    border-radius: 8px; /* Bordas arredondadas para um visual moderno */
-    padding: 25px; /* Espaçamento interno dentro do card */
-    margin-bottom: 30px; /* Espaçamento entre um card e outro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o card */
-}
-
-.card h3 {
-    margin-top: 0; /* Remove margem superior padrão do h3 para não grudar no topo do card */
-    margin-bottom: 15px; /* Espaçamento abaixo do título do card */
-    color: #333; /* Cor mais escura para o título */
-}
-
-.card ul {
-    list-style-type: disc; /* Garante que a lista tenha marcadores */
-    padding-left: 20px; /* Recuo para a lista */
-    margin-bottom: 15px; /* Espaçamento abaixo das listas */
-}
-
-.card p {
-    line-height: 1.6; /* Aumenta o espaçamento entre as linhas do texto para melhor leitura */
-    margin-bottom: 10px; /* Espaçamento entre parágrafos */
-}
-
-/* Opcional: Para o espaçamento geral da seção */
-section {
-    padding: 20px; /* Adiciona um padding na seção como um todo, para o conteúdo não grudar nas laterais da página */
-    max-width: 960px; /* Limita a largura do conteúdo para não esticar demais em telas grandes */
-    margin: 20px auto; /* Centraliza a seção na página */
+  text-decoration: underline;
+  color: blue;
 }
