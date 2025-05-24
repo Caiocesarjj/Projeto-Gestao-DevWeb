@@ -18,7 +18,7 @@ Este é um site acadêmico criado como parte do projeto de pesquisa sobre a áre
 
 ## 🚀 Acesse o Projeto Online
 
-[Link para o site publicado](https://caiocesarjj.github.io/Projeto-Gestao-DevWeb/)
+[Link para o site publicado](https://github.com/caiocesarjj/projeto-gestao-devweb/)
 
 ## 👨‍💻 Como rodar localmente
 
